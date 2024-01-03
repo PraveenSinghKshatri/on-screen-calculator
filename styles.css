@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+html, body {
+margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+
+}
+
+#container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px #111;
+
+
+}
+
+h1{
+    color: #999;
+    margin-bottom: 1em;
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px #111;
+}
+
+#calculator-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#calculator-display {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    width: 2em;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: background-color 0.3s;
+    text-shadow: 2px 2px 5px #111;
+
+}
+
+.btn:hover {
+    background-color: #eee;
+}
+
+
+/* Your existing styles remain unchanged */
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #calculator-display {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .btn {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+.dark-mode .btn:hover {
+    background-color: #333;
+}
+
+.dark-mode .mode-btn {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #999;
+}
+
+.dark-mode .mode-btn:hover {
+    background-color: #444;
+}
