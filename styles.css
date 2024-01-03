@@ -72,6 +72,12 @@ h1{
     background-color: #eee;
 }
 
+.footer{
+    color: #777;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
 
 /* Your existing styles remain unchanged */
 
