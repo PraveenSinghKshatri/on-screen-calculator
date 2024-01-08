@@ -90,4 +90,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.addEventListener('keydown', handleKeyboardInput);
+
+    // JavaScript to display the range of years in the copyright notice
+     const copyrightYearElement = document.getElementById('copyright-year');
+     const startYear = 2024;
+     const currentYear = new Date().getFullYear();
+     const yearRange = (startYear === currentYear) ? currentYear : `${startYear} - ${currentYear}`;
+    copyrightYearElement.textContent = yearRange;
+    
 });
